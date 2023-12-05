@@ -1,4 +1,3 @@
-"use strict";
 let game = {
     title: "Super Mario Sunshine",
     genres: ["platformer", "adventure"],
@@ -14,3 +13,4 @@ for (const game of games) {
     // console.log((game.price ?? 0) * 100);
     console.log(game.price?.toString());
 }
+export {};

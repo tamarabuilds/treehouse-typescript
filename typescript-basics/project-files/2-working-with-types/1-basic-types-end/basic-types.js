@@ -1,4 +1,3 @@
-"use strict";
 let numbers;
 numbers = [1, 2, 3, 4, 5];
 // console.log(typeof numbers);
@@ -24,3 +23,4 @@ let personData = {
 };
 let personAge;
 personAge = personData.age;
+export {};

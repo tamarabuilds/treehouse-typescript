@@ -1,4 +1,3 @@
-"use strict";
 const book1 = {
     title: "Atlus Shrugged",
     author: "Ayan Rand",
@@ -22,3 +21,5 @@ const books = {
     notRead: [book3],
     wantToRead: [book1],
 };
+export {};
+// Full list of utility types => https://www.typescriptlang.org/docs/handbook/utility-types.html

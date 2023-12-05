@@ -1,4 +1,3 @@
-"use strict";
 let hasSuperPowers;
 hasSuperPowers = true;
 hasSuperPowers = false;
@@ -18,3 +17,4 @@ hero = String(122);
 hero = String(true);
 hero = (122).toString();
 console.log(hero);
+export {};
