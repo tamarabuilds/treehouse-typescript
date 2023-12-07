@@ -1,23 +1,24 @@
-type Employee = {
+interface Employee {
     name: string,
     job: string
 }
 
-type Manager = {
+interface Manager {
     name: string,
     manages: Person<Employee>[]
 }
 
 // Created a generic
-type Person<PersonType, DateType = string> = {
+interface Person<PersonType, DateType = string> {
     createdAt: DateType,
     updatedAt: DateType,
     data: PersonType
 }
 
-const tim: Person<Employee, string> = {
+const tim: Data = {
     createdAt: '01/01/2022',
     updatedAt: '01/01/2022',
+    age: 24,
     data: {
         name: 'Tim',
         job: 'Security'
@@ -40,4 +41,16 @@ const anna: Person<Manager, Date> = {
         name: 'Anna',
         manages: [tim, jack]
     }
+}
+
+// interface SuperString {name: string};
+// interface SuperString {job: string};
+interface SuperString {data: Employee};
+
+type Age = {
+    age?: number
+}
+interface Data extends SuperString, Age{
+    createdAt: string,
+    updatedAt: string,
 }
